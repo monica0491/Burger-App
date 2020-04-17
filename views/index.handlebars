@@ -1,0 +1,58 @@
+
+<div class="container">
+    <div class="row">
+    <!-- Undevoured Burgers -->
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="lefthead"><strong>Burgers you want to eat!</strong></div>
+                    <div class="panel-body">
+                    <ul>
+                    {{#each burgers}}
+                    {{#unless devoured}}
+                    {{burger_name}}
+                    <button type="button" class="eatburger" id ="eatbutton" data-id="{{this.id}}" data-devour="{{devour}}"><span class="fa fa-cutlery"></span></button>
+                    <hr>
+                    {{/unless}}
+                    {{/each}}
+                    </ul>
+                </div>
+            </div>
+        <div>
+    </div>
+    <!-- Devoured Burgers -->
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="righthead"><strong>Burgers you have devoured!</strong></div>
+                    <div class="panel-body">
+                    <ul>
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    {{burger_name}} 
+                    <hr>
+                    {{/if}}
+                    {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="jumbotron" id="box">
+        <br>
+        <h2 id="color-override">Add the Burger you want to eat!</h2>
+        <panel>
+            <form class="create-form">
+                <div class="form-group">
+                    <label for="newburger" id="color-override">New Burger:</label>
+                    <input type="text" id="newburger" name="burger">
+                    {{!-- Create a button in index.handlebars that will submit the user input into the database. --}}
+                    <button type="submit" class="btn btn-success" id="addburger"><span class="fa fa-thumbs-up"></span></button>
+                </div>
+            </form>
+        </panel>
+    </div><!-- /jumbotron -->
+</div>
