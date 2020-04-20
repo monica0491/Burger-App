@@ -1,6 +1,6 @@
 {
     "development": {
-      "username": "flwh4l5vn8uo7681",
+      "username": "root",
       "password": "n2gfly8zwpna6ysw",
       "database": "m3ydyht5xen7nkui",
       "host": "qbhol6k6vexd5qjs.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
@@ -8,7 +8,7 @@
       "dialect": "mysql"
     },
     "test": {
-      "username": "flwh4l5vn8uo7681",
+      "username": "root",
       "password": "n2gfly8zwpna6ysw",
       "database": "m3ydyht5xen7nkui",
       "host": "qbhol6k6vexd5qjs.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
